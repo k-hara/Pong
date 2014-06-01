@@ -108,13 +108,13 @@ def keydown(key):
     global paddle1_vel, paddle2_vel
     
     if (key== simplegui.KEY_MAP["w"]) and (paddle1_pos > HALF_PAD_HEIGHT) :
-        paddle1_vel = -18
+        paddle1_vel = -5
     if (key == simplegui.KEY_MAP["s"]) and (paddle1_pos <= HEIGHT-HALF_PAD_HEIGHT):
-        paddle1_vel = 18 
+        paddle1_vel = 5 
     if (key == simplegui.KEY_MAP["up"]) and (paddle2_pos > HALF_PAD_HEIGHT):
-        paddle2_vel = -18
+        paddle2_vel = -5
     if (key == simplegui.KEY_MAP["down"]) and (paddle2_pos < HEIGHT-HALF_PAD_HEIGHT):
-        paddle2_vel = 18
+        paddle2_vel = 5
     
 def keyup(key):
     global paddle1_vel, paddle2_vel
